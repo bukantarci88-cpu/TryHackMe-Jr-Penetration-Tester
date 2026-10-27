@@ -42,8 +42,6 @@ dirb http://fakebank.thm
 
 ### **Task 4 - Attack the Admin Page**
 
-![User profile photo.](https://tryhackme.com/_next/static/media/avatar.ebbf6d3be11b4b7c.svg)
-
 You should now have found a hidden admin panel that lets you add money to your account. To open this URL in the browser of the simulated desktop add /bank-transfer to the URL in the browser. Use your account number **8881** and deposit **$2000** (or more). After depositing, return to your account page and confirm the balance is now positive.
 
 **Answer the questions below**
