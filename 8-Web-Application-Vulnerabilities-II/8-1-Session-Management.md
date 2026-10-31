@@ -257,8 +257,8 @@ THM{Got.the.User}
 
 Register on the page, log in, then log out and log in again. At the same time, open an Incognito tab in Firefox. Go to Inspect Element, navigate to Storage, and set the user role to 'lecturer'.
 
-![image.png](Jr%20Pent%208%201%20Session%20Management/image.png)
 
+<img width="1202" height="804" alt="image" src="https://github.com/user-attachments/assets/c4d310b1-1b20-4a9b-b8b3-e41903192da9" />
 
 
 > How many lecturers are registered on the application?
@@ -268,7 +268,9 @@ Register on the page, log in, then log out and log in again. At the same time, o
 
 Set cooky for admin
 
-![image.png](Jr%20Pent%208%201%20Session%20Management/image%201.png)
+
+<img width="1202" height="804" alt="image 1" src="https://github.com/user-attachments/assets/1df94949-576f-453a-a2d8-368179cc5d2c" />
+
 
 > Excluding the unauthenticated user, how many roles does the application have?
 > 
@@ -282,7 +284,9 @@ student, lecturer, admin
 
 4
 
-![image.png](Jr%20Pent%208%201%20Session%20Management/image%202.png)
+
+<img width="1202" height="510" alt="image 2" src="https://github.com/user-attachments/assets/5590eb48-6593-4369-bb10-d745bbf86b09" />
+
 
 > What is the highest score that student1 has achieved on a test?
 > 
