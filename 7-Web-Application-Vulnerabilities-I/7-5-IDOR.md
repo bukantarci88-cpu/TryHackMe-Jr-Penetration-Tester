@@ -31,6 +31,6 @@ The vulnerable endpoint you're targeting may not always be something you see in 
 
 We'll start by investigating how this information gets pre-filled. If you open your browser developer tools, select the network tab and then refresh the page, you'll see a call to an endpoint with the path /api/v1/customer?id=`{user_id}`. This page returns in JSON format your user id, username and email address. We can see from the path that the user information shown is taken from the query string's id parameter (see below image).
 
-![image.png](Jr%20Pen%207%205%20IDOR/image.png)
 
+<img width="827" height="164" alt="image" src="https://github.com/user-attachments/assets/1688430d-131b-4ee4-ac1c-e8bc6bd5be3e" />
 
