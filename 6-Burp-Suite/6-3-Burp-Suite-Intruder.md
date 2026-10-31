@@ -8,8 +8,7 @@ Burp Suite’s Intruder module, which offers automated request manipulation and 
 
 Intruder is Burp Suite’s built-in fuzzing tool that allows for automated request modification and repetitive testing with variations in input values. By using a captured request (often from the Proxy module), Intruder can send multiple requests with slightly altered values based on user-defined configurations. It serves various purposes, such as brute-forcing login forms by substituting username and password fields with values from a wordlist or performing fuzzing attacks using wordlists to test subdirectories, endpoints, or virtual hosts. Intruder’s functionality is comparable to command-line tools like **Wfuzz** or **ffuf**.
 
-![image.png](Jr%20Pen%206%203%20Burp%20Suite%20Intruder/image.png)
-
+<img width="847" height="414" alt="image" src="https://github.com/user-attachments/assets/11cfe284-5f96-4f6b-a486-dcd0d798d132" />
 
 
 There are four sub-tabs within Intruder:
@@ -26,7 +25,8 @@ There are four sub-tabs within Intruder:
 
 When using Burp Suite Intruder to perform an attack, the first step is to examine the positions within the request where we want to insert our payloads. 
 
-![image.png](Jr%20Pen%206%203%20Burp%20Suite%20Intruder/image%201.png)
+<img width="839" height="442" alt="image 1" src="https://github.com/user-attachments/assets/a5fc8b9e-9bb9-410e-ab25-4fb3317af80c" />
+
 
 Notice that Burp Suite automatically attempts to identify the most probable positions where payloads can be inserted. These positions are highlighted in green and enclosed by section marks **(`§`)**.
 
@@ -37,7 +37,9 @@ Notice that Burp Suite automatically attempts to identify the most probable posi
 
 In the **Payloads** tab of Burp Suite Intruder, we can create, assign, and configure payloads for our attack. 
 
-![image.png](Jr%20Pen%206%203%20Burp%20Suite%20Intruder/image%202.png)
+
+<img width="861" height="785" alt="image 2" src="https://github.com/user-attachments/assets/d330bb04-c765-4079-a72b-924228bcc7b4" />
+
 
 Payload Sets: This section allows us to choose the position for which we want to configure a payload set and select the type of payload we want to use.
 
@@ -99,15 +101,12 @@ The Cluster bomb attack type in Burp Suite Intruder allows us to choose multiple
 
 To put our theoretical knowledge into practice, we will attempt to gain access to the support portal located at http://MACHINE_IP/support/login. This portal follows a typical login structure, and upon inspecting its source code, 
 
-![image.png](Jr%20Pen%206%203%20Burp%20Suite%20Intruder/image%203.png)
+<img width="839" height="495" alt="image 7" src="https://github.com/user-attachments/assets/d2d5ea71-e691-4e7e-a3d5-bcead7ad4ba0" />
+<img width="708" height="602" alt="image 6" src="https://github.com/user-attachments/assets/c9ce9bde-2723-47a4-bba0-c013ab8d96d2" />
+<img width="709" height="610" alt="image 5" src="https://github.com/user-attachments/assets/bf919f23-0c26-45ae-9ef1-de34c68b6d15" />
+<img width="866" height="711" alt="image 4" src="https://github.com/user-attachments/assets/590c4ba1-ec7f-4bb2-8e1d-12db979768c5" />
+<img width="849" height="766" alt="image 3" src="https://github.com/user-attachments/assets/16e03235-4ee6-4410-838b-8f55c5d1cba9" />
 
-![image.png](Jr%20Pen%206%203%20Burp%20Suite%20Intruder/image%204.png)
-
-![image.png](Jr%20Pen%206%203%20Burp%20Suite%20Intruder/image%205.png)
-
-![image.png](Jr%20Pen%206%203%20Burp%20Suite%20Intruder/image%206.png)
-
-![image.png](Jr%20Pen%206%203%20Burp%20Suite%20Intruder/image%207.png)
 
 **Tutorial:** 
 
@@ -131,9 +130,11 @@ The numbering system indicates that the tickets are assigned integer identifiers
 Access Control: The endpoint may be properly configured to restrict access only to tickets assigned to our current user. In this case, we can only view tickets associated with our account.
 IDOR Vulnerability: Alternatively, the endpoint may lack appropriate access controls, leading to a vulnerability known as Insecure Direct Object References (IDOR). If this is the case, we could potentially exploit the system and read all existing tickets, regardless of the assigned user.
 
-![image.png](Jr%20Pen%206%203%20Burp%20Suite%20Intruder/image%208.png)
 
-![image.png](Jr%20Pen%206%203%20Burp%20Suite%20Intruder/image%209.png)
+<img width="844" height="727" alt="image 8" src="https://github.com/user-attachments/assets/76242cc0-c820-49a3-9bb5-d1ad04891722" />
+
+<img width="852" height="739" alt="image 9" src="https://github.com/user-attachments/assets/4f4ed7aa-2d96-4623-9ef0-2565b797947a" />
+
 
 > Which attack type is best suited for this task? Sniper
 > 
@@ -147,7 +148,9 @@ THM{MTMxNTg5NTUzMWM0OWRlYzUzMDVjMzJl}
 
 Begin by capturing a request to http://MACHINE_IP/admin/login/ and reviewing the response.
 
-![image.png](Jr%20Pen%206%203%20Burp%20Suite%20Intruder/image%2010.png)
+
+<img width="705" height="648" alt="image 10" src="https://github.com/user-attachments/assets/a69278c3-f93a-4b62-b086-fba9ade55a1a" />
+
 
 **Tutorial:**
 1. Navigate to http://MACHINE_IP/admin/login/. Activate Intercept in the Proxy module and attempt to log in. Capture the request and send it to Intruder.
