@@ -61,23 +61,28 @@ There are two type of settings available for configuring Burp Suite.
 > In which base category can you find the "Updates" sub-category, which controls the Burp Suite update behaviour? Suite
 > 
 
-![image.png](Jr%20Pen%206%201%20Burp%20Suite%20The%20Basics/image.png)
+
+<img width="759" height="772" alt="image" src="https://github.com/user-attachments/assets/7fb42549-66b9-4b21-8886-ab721a62f897" />
+
 
 > What is the name of the sub-category which allows you to change the keybindings for shortcuts in Burp Suite? Hotkeys
 > 
 
-![image.png](Jr%20Pen%206%201%20Burp%20Suite%20The%20Basics/image%201.png)
+<img width="778" height="505" alt="image 1" src="https://github.com/user-attachments/assets/cc26226f-8233-471a-9312-1d6c134d56b7" />
+
 
 > If we have uploaded Client-Side TLS certificates, can we override these on a per-project basis (yea/nay)? yea
 > 
 
-![image.png](Jr%20Pen%206%201%20Burp%20Suite%20The%20Basics/image%202.png)
+<img width="844" height="396" alt="image 2" src="https://github.com/user-attachments/assets/1117d963-ddff-4362-a9ab-bce3fa7bd060" />
+
 
 ### **Task 8 - Introduction to the Burp Proxy**
 
 The Burp Proxy is a fundamental and crucial tool within Burp Suite. It enables the capture of requests and responses between the user and the target web server. This intercepted traffic can be manipulated, sent to other tools for further processing, or explicitly allowed to continue to its destination.
 
-![image.png](Jr%20Pen%206%201%20Burp%20Suite%20The%20Basics/image%203.png)
+<img width="848" height="426" alt="image 3" src="https://github.com/user-attachments/assets/35217999-9b66-47d5-b6ab-12ca4e90ece4" />
+
 
 **Intercepting Requests:** When requests are made through the Burp Proxy, they are intercepted and held back from reaching the target server. The requests appear in the Proxy tab, allowing for further actions such as forwarding, dropping, editing, or sending them to other Burp modules. To disable the intercept and allow requests to pass through the proxy without interruption, click the Intercept is on button.
 
@@ -93,7 +98,8 @@ The Burp Proxy is a fundamental and crucial tool within Burp Suite. It enables t
 
 There are two ways to proxy our traffic through Burp Suite. We could use the embedded browser. We can configure our local web browser to proxy our traffic through Burp; this is more common and so will be the focus of this task. The Burp Proxy works by opening a web interface on 127.0.0.1:8080 (by default). As implied by the fact that this is a "proxy", we need to redirect all of our browser traffic through this port before we can start intercepting it with Burp. We can do this by altering our browser settings or, more commonly, by using a Firefox browser extension called FoxyProxy. FoxyProxy allows us to save proxy profiles, meaning we can quickly and easily switch to our "Burp Suite" profile in a matter of clicks, then disable the proxy just as easily.
 
-![image.png](Jr%20Pen%206%201%20Burp%20Suite%20The%20Basics/image%204.png)
+<img width="821" height="665" alt="image 4" src="https://github.com/user-attachments/assets/0c520cb0-c96e-4e5f-8f63-db6db6fb3db1" />
+
 
 ### **Task 10 - Site Map and Issue Definitions**
 
@@ -106,7 +112,8 @@ We can start the Burp Browser with the “Open Browser” button in the proxy ta
 1. The smart option: We could create a new user and run Burp Suite under a low privilege account.
 2. The easy option: We could go to Project options -> Misc -> Embedded Browser and check the Allow the embedded browser to run without a sandbox option.
 
-![image.png](Jr%20Pen%206%201%20Burp%20Suite%20The%20Basics/image%205.png)
+<img width="814" height="164" alt="image 5" src="https://github.com/user-attachments/assets/d41b3d7f-c627-45ca-8fd0-0f7b54c06caa" />
+
 
 ### **Task 12 - Scoping and Targeting**
 
@@ -118,7 +125,8 @@ There are three sub-tabs under *Target*:
 - **Scope:** We have already seen the Scope sub-tab — it allows us to control Burp’s target scope for the project.
 - **Issue Definitions:** Whilst we don’t have access to the Burp Suite vulnerability scanner in Burp Community, we do still have access to a list of all the vulnerabilities it looks for. The Issue Definitions section gives us a huge list of web vulnerabilities (complete with descriptions and references).
 
-![image.png](Jr%20Pen%206%201%20Burp%20Suite%20The%20Basics/image%206.png)
+<img width="849" height="559" alt="image 6" src="https://github.com/user-attachments/assets/55b8ebdd-a1f7-465a-8ed5-090d4fdac3a5" />
+
 
 ### **Task 13 - Proxying HTTPS**
 
@@ -151,7 +159,8 @@ Here’s a step-by-step guide to bypassing this filter and triggering a **Refle
 6. **Forward the request**: Press the “Forward” button in Burp Proxy to send the modified request to the server.
 7. **Check the result**: If successful, the website should display an alert box indicating that the XSS payload was executed, confirming the vulnerability.
 
-![image.png](Jr%20Pen%206%201%20Burp%20Suite%20The%20Basics/image%207.png)
+<img width="859" height="668" alt="image 7" src="https://github.com/user-attachments/assets/24a9c1fd-ef4d-4957-ad9d-2ad771fd0d76" />
+
 
 ### **Task 15 - Conclusion**
 
