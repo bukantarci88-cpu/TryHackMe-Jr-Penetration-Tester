@@ -17,7 +17,9 @@ As a penetration tester, your role when reviewing a website or web application i
 
 The page source is the human-readable code returned to our browser/client from the web server each time we make a request. The returned code is made up of HTML ( HyperText Markup Language), CSS ( Cascading Style Sheets ) and JavaScript, and it's what tells our browser what content to display, how to show it and adds an element of interactivity with JavaScript.
 
-![image.png](Jr%20Pen%205%201%20Walking%20An%20Application/image.png)
+
+<img width="552" height="131" alt="image" src="https://github.com/user-attachments/assets/c1eba2b4-7789-4c86-bcd1-c099c94adecd" />
+
 
 #### <u>**Task 4 - Developer Tools - Inspector**</u>
 
@@ -35,7 +37,9 @@ The first two articles are readable, but the third has been blocked with a float
 
 **Developer Tools - Debugger:** This panel in the developer tools is intended for debugging JavaScript, and again is an excellent feature for web developers wanting to work out why something might not be working. But as penetration testers, it gives us the option of digging deep into the JavaScript code. In Firefox and Safari, this feature is called Debugger, but in Google Chrome, it's called Sources. Many times when viewing javascript files, you'll notice that everything is on one line, which is because it has been minimised, which means all formatting ( tabs, spacing and newlines ) have been removed to make the file smaller. This file is no exception to this, and it has also been obfusticated, which makes it purposely difficult to read, so it can't be copied as easily by other developers.
 
-![image.png](Jr%20Pen%205%201%20Walking%20An%20Application/image%201.png)
+
+<img width="1221" height="551" alt="image 1" src="https://github.com/user-attachments/assets/81ffd405-107d-450e-ad71-3335366b66b0" />
+
 
 #### <u>**Task 6 - Developer Tools - Network**</u>
 
@@ -43,4 +47,5 @@ The first two articles are readable, but the third has been blocked with a float
 
 With the network tab open, try filling in the contact form and pressing the **Send Message** button. You'll notice an event in the network tab, and this is the form being submitted in the background using a method called AJAX. AJAX is a method for sending and receiving network data in a web application background without interfering by changing the current web page.
 
-![image.png](Jr%20Pen%205%201%20Walking%20An%20Application/image%202.png)
+<img width="804" height="458" alt="image 2" src="https://github.com/user-attachments/assets/260651bb-0ab7-47b7-bb67-24f258dba7c7" />
+
